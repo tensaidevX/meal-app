@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+#meal-cards-wrapper ul .booking-card {
+  flex: 0 0 250px;
+}
+
+#meal-cards-wrapper ul {
+  margin-top: 100px;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0px;
+}
+
+.content .btn {
+  border: 3px solid white;
+  padding: 10px 15px;
+  background: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#fav_null {
+  margin-top: 10%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#fav_null h1 {
+  font-family: "Pacifico", cursive;
+}
+
+@media only screen and (max-width: 900px) and (min-width: 300px) {
+  #fav_null {
+    margin-top: 50%;
+  }
+}

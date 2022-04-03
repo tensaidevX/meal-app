@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/caraousel.css" />
+    <link rel="stylesheet" href="css/mealcard.css" />
+    <script src="./js/index.js" defer></script>
+    <title>Cuisine Book</title>
+  </head>
+  <body>
+    <header>
+      <a href="#nav" id="menu-ico"
+        ><img src="https://cdn-icons-png.flaticon.com/512/1828/1828551.png"
+      /></a>
+
+      <a href="./index.html" id="m-home-page-link">
+        <div id="logo">
+          <img src="https://cdn-icons-png.flaticon.com/512/3063/3063371.png" />
+          <h1>Cuisine Book</h1>
+        </div></a
+      >
+
+      <nav id="nav">
+        <a id="close-btn" href="#main"
+          ><img src="https://cdn-icons-png.flaticon.com/512/1828/1828778.png"
+        /></a>
+        <a href="./index.html" id="home-page-link">
+          <div id="logo">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/3063/3063371.png"
+            />
+            <h1>Cuisine Book</h1>
+          </div></a
+        >
+        <ul class="menu">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./favourites.html">Favorites</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+        <ul id="social-icons">
+          <li>
+            <a href="" class="social-icon"> <i class="fa fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="" class="social-icon"> <i class="fa fa-twitter"></i></a>
+          </li>
+
+          <li>
+            <a href="" class="social-icon"> <i class="fa fa-youtube"></i></a>
+          </li>
+          <li>
+            <a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a>
+          </li>
+          <li>
+            <a href="" class="social-icon"> <i class="fa fa-github"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- home page section -->
+    <section id="welcome-page">
+      <div id="slideshow">
+        <div class="container">
+          <section></section>
+          <section></section>
+          <section></section>
+          <section></section>
+          <section></section>
+        </div>
+      </div>
+      <a href="#main">
+        <div id="search-logo">
+          <h6>Search Meal</h6>
+          <img src="./image/search.svg" /></div
+      ></a>
+    </section>
+    <section id="main">
+      <div id="search-bar">
+        <form action="" class="search-bar">
+          <input
+            id="search-value"
+            type="search"
+            name="search"
+            pattern=".*\S.*"
+            required
+          />
+          <button class="search-btn" id="search-btn" type="submit">
+            <span>Search</span>
+          </button>
+        </form>
+      </div>
+      <div id="meal-cards-wrapper">
+        <!-- <h1>Tickets cards</h1> -->
+        <ul id="meals-list"></ul>
+      </div>
+
+      <div id="cards-page"></div>
+    </section>
+  </body>
+</html>

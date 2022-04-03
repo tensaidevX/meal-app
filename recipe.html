@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe</title>
+    <link rel="stylesheet" href="./css/recipe.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="./js/recipe.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <a href="#nav" id="menu-ico"
+        ><img src="https://cdn-icons-png.flaticon.com/512/1828/1828551.png"
+      /></a>
+
+      <a href="./index.html" id="m-home-page-link">
+        <div id="logo">
+          <img src="https://cdn-icons-png.flaticon.com/512/3063/3063371.png" />
+          <h1>Cuisine Book</h1>
+        </div></a
+      >
+
+      <nav id="nav">
+        <a id="close-btn" href="#main"
+          ><img src="https://cdn-icons-png.flaticon.com/512/1828/1828778.png"
+        /></a>
+        <a href="./index.html" id="home-page-link">
+          <div id="logo">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/3063/3063371.png"
+            />
+            <h1>Cuisine Book</h1>
+          </div></a
+        >
+        <ul class="menu">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./favourites.html">Favorites</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+        <ul id="social-icons">
+          <li>
+            <a href="" class="social-icon"> <i class="fa fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="" class="social-icon"> <i class="fa fa-twitter"></i></a>
+          </li>
+
+          <li>
+            <a href="" class="social-icon"> <i class="fa fa-youtube"></i></a>
+          </li>
+          <li>
+            <a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a>
+          </li>
+          <li>
+            <a href="" class="social-icon"> <i class="fa fa-github"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="left-container">
+        <div id="recipe">
+          <div class="sec-center">
+            <input
+              class="dropdown"
+              type="checkbox"
+              id="dropdown"
+              name="dropdown"
+            />
+            <label class="for-dropdown" for="dropdown"
+              >Ingredients <i class="uil uil-arrow-down"></i
+            ></label>
+            <div id="section-dropdown"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="right-container"></div>
+    </main>
+  </body>
+</html>

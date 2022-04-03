@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Sofia", sans-serif;
+}
+
+#meal-cards-wrapper h2 {
+  color: #0a4870;
+  font-weight: 500;
+}
+
+#meal-cards-wrapper ul {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+#meal-cards-wrapper ul .booking-card {
+  position: relative;
+  /* width: 300px; */
+  display: flex;
+  flex: 0 0 200px;
+  flex-direction: column;
+  margin: 20px;
+  margin-bottom: 30px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-position: center center;
+  background-size: cover;
+  text-align: center;
+  color: #0a4870;
+  transition: 0.3s;
+}
+
+.booking-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(10, 72, 112, 0);
+  transition: 0.3s;
+}
+
+.book-container {
+  height: 100px;
+}
+
+.book-container .content {
+  position: relative;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  transform: translateY(-200px);
+  transition: 0.3s;
+}
+
+.content .btn {
+  border: 3px solid white;
+  padding: 10px 15px;
+  background: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.3em;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.content .btn:hover {
+  background: white;
+  border: 0px solid white;
+  color: #0a4870;
+}
+
+.informations-container {
+  flex: 1 0 auto;
+  padding: 20px;
+  background: #f0f0f0;
+  transform: translateY(206px);
+  transition: 0.3s;
+}
+
+.title {
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  width: 50px;
+  margin: auto;
+  background: #0a4870;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.more-information {
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.info-and-date-container {
+  display: flex;
+}
+
+.info-and-date-container .box {
+  flex: 1 0;
+  padding: 15px;
+  margin-top: 20px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background: white;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+.info-and-date-container .box .icon {
+  margin-bottom: 5px;
+}
+
+.box.info {
+  color: #ec992c;
+  margin-right: 10px;
+}
+.disclaimer {
+  margin-top: 20px;
+  font-size: 0.8em;
+  color: #7d7d7d;
+}
+
+.booking-card:hover::before {
+  background: rgba(10, 72, 112, 0.6);
+}
+
+.booking-card:hover .book-container .content {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.booking-card:hover .informations-container {
+  transform: translateY(0px);
+}
+
+.more-information {
+  opacity: 1;
+}
+
+#meal-cards-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  #meal-cards-wrapper h2 {
+    color: white;
+    font-weight: 500;
+  }
+
+  .informations-container {
+    color: white;
+    background: transparent;
+  }
+
+  #meal-cards-wrapper ul .booking-card::before {
+    background: rgba(38, 38, 38, 0.34);
+  }
+  #meal-cards-wrapper ul .booking-card .book-container .content {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  #meal-cards-wrapper ul .booking-card .informations-container {
+    transform: translateY(0px);
+  }
+  #meal-cards-wrapper
+    ul
+    .booking-card
+    .informations-container
+    .more-information {
+    opacity: 1;
+  }
+}
+.credits {
+  display: table;
+  background: #0a4870;
+  color: white;
+  line-height: 25px;
+  margin: 10px auto;
+  padding: 20px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+.credits a {
+  color: #e3ebf1;
+}
+
+#meal-cards-wrapper h1 {
+  margin: 20px;
+}
+
+#meal-cards-wrapper ul .booking-card {
+  flex: 0 0 300px;
+}
+
+#meal-cards-wrapper ul {
+  margin-top: 2%;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0px;
+}
+
+.content .btn {
+  border: 3px solid white;
+  padding: 16px 36px;
+  background: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}

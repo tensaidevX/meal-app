@@ -1,0 +1,456 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #f0f2f5;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+header {
+  top: 0;
+  left: 0;
+  z-index: 10;
+  position: fixed;
+  height: 11vh;
+  width: 100%;
+}
+
+#menu-ico {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  visibility: hidden;
+}
+
+#menu-ico img {
+  height: 80%;
+  width: 80%;
+}
+nav {
+  width: 100%;
+  background-color: rgba(249, 249, 249, 0.85);
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0px 2px 5px 0px #343434;
+}
+
+.m-nav {
+  visibility: visible;
+  position: absolute;
+  height: 100vh;
+  flex-direction: column;
+  width: 60vw;
+  z-index: 10;
+}
+
+#home-page-link {
+  display: flex;
+  width: 20%;
+  text-decoration: none;
+}
+
+#logo {
+  margin: 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#logo img {
+  height: 35px;
+  width: 40px;
+  border: solid 2px black;
+  border-radius: 50%;
+  background-color: rgb(255, 136, 0);
+}
+
+#logo h1 {
+  font-family: "Secular One", sans-serif;
+  font-size: 1.2rem;
+  margin-left: 10px;
+  color: black;
+}
+.menu {
+  margin: 0px;
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+}
+.menu li {
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50px;
+  padding: 0px 20px;
+  transition: background-color ease 0.3s;
+  margin-left: 14px;
+}
+
+.menu li:hover {
+  background-color: rgb(206, 204, 204);
+  border: solid 2px white;
+}
+
+.menu li a {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: black;
+}
+
+/* social icons */
+
+#social-icons {
+  margin-left: 25%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+#social-icons li {
+  margin-left: 20px;
+}
+#social-icons {
+  margin: 0px;
+  width: 40%;
+}
+.footer-social-icons {
+  width: 350px;
+  display: block;
+  margin: 0 auto;
+}
+.social-icon {
+  color: #fff;
+}
+ul.social-icons {
+  margin-top: 10px;
+}
+.social-icons li {
+  vertical-align: top;
+  display: inline;
+  height: 100px;
+}
+.social-icons a {
+  color: #fff;
+  text-decoration: none;
+}
+.fa-facebook {
+  padding: 10px 14px;
+  -o-transition: background-color 0.5s;
+  -ms-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+  background-color: #322f30;
+}
+.fa-facebook:hover {
+  background-color: #3d5b99;
+}
+.fa-twitter {
+  padding: 10px 12px;
+  -o-transition: background-color 0.5s;
+  -ms-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+  background-color: #322f30;
+}
+.fa-twitter:hover {
+  background-color: #00aced;
+}
+.fa-rss {
+  padding: 10px 14px;
+  -o-transition: background-color 0.5s;
+  -ms-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+  background-color: #322f30;
+}
+.fa-rss:hover {
+  background-color: #eb8231;
+}
+.fa-youtube {
+  padding: 10px 14px;
+  -o-transition: background-color 0.5s;
+  -ms-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+  background-color: #322f30;
+}
+.fa-youtube:hover {
+  background-color: #e64a41;
+}
+.fa-linkedin {
+  padding: 10px 14px;
+  -o-transition: background-color 0.5s;
+  -ms-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+  background-color: #322f30;
+}
+.fa-linkedin:hover {
+  background-color: #0073a4;
+}
+.fa-github {
+  padding: 10px 14px;
+  -o-transition: background-color 0.5s;
+  -ms-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+  background-color: #322f30;
+}
+.fa-github:hover {
+  background-color: #5a32a3;
+}
+
+/* end */
+/* main section */
+#welcome-page {
+  position: relative;
+  background-color: rgb(255, 189, 128);
+  height: 86vh;
+  width: 100%;
+}
+#main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f0f2f5;
+}
+
+/* search bar */
+#search-bar {
+  margin-top: 12%;
+}
+
+#search-logo {
+  cursor: pointer;
+  background-color: white;
+  top: 40%;
+  left: 35%;
+  height: 60px;
+  width: 300px;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 40px;
+  justify-content: center;
+}
+
+#search-logo h6 {
+  padding-left: 10px;
+  width: 75%;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: rgb(20, 20, 20);
+  font-size: 1rem;
+  border: 2px solid transparent;
+  border-radius: 40px;
+}
+
+#search-logo img {
+  height: 40px;
+  width: 40px;
+}
+
+#search-bar {
+  position: relative;
+}
+#search-bar ul {
+  z-index: 10;
+  list-style-type: none;
+  margin: 0px !important;
+  top: 72px;
+  left: 31.5%;
+  position: absolute;
+  width: 430px;
+  background-color: white;
+}
+
+#search-bar li {
+  padding-left: 2%;
+  width: 98%;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+#search-bar li:hover {
+  background-color: #322f303b;
+}
+
+#search-bar li a {
+  text-decoration: none;
+  color: #322f30;
+}
+
+/* cards section  */
+
+#cards-page {
+  /* background-color: red; */
+  z-index: -10;
+  width: 100vw;
+  height: 7vh;
+  top: 117vh;
+  position: absolute;
+}
+#meals-list {
+  justify-content: center;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#m-home-page-link {
+  visibility: hidden;
+  position: absolute;
+}
+
+#close-btn {
+  visibility: hidden;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  top: 70%;
+  left: 47%;
+}
+#close-btn img {
+  height: 100%;
+  width: 100%;
+}
+@media only screen and (max-width: 900px) and (min-width: 300px) {
+  .menu li a:hover {
+    background-color: rgb(206, 204, 204);
+  }
+
+  .menu li a {
+    padding: 10px 40px;
+  }
+
+  .menu li:hover {
+    background-color: transparent;
+    border: none;
+  }
+
+  #close-btn {
+    visibility: inherit;
+  }
+  #close-btn:focus ~ #nav {
+    visibility: hidden;
+  }
+
+  header {
+    z-index: 10;
+    height: 11vh;
+    box-shadow: 0px 2px 2px 0px #34343460;
+    background-color: #fefefef1;
+  }
+
+  #logo {
+    margin-top: 15px;
+  }
+  #m-home-page-link {
+    text-decoration: none;
+    left: 30%;
+    visibility: visible;
+    position: absolute;
+  }
+
+  #menu-ico {
+    visibility: visible;
+  }
+
+  body {
+    position: relative;
+  }
+
+  nav {
+    position: fixed;
+    visibility: hidden;
+    position: absolute;
+    height: 100vh;
+    flex-direction: column;
+    width: 60vw;
+    z-index: 10;
+  }
+
+  #home-page-link {
+    visibility: hidden;
+    position: absolute;
+  }
+
+  #nav:target {
+    visibility: visible;
+  }
+  .menu {
+    height: 50%;
+    flex-direction: column;
+    margin-top: 30%;
+    width: 100%;
+  }
+
+  .menu li {
+    padding: 0px;
+    text-align: left;
+    margin-left: 0px;
+    margin-top: 20px;
+    width: 100%;
+  }
+  #main {
+    background-color: #c0e6fb42;
+  }
+
+  #social-icons {
+    align-items: flex-end;
+    margin-left: 15%;
+    margin-bottom: 20px;
+    height: 50%;
+    width: 70%;
+  }
+
+  #search-bar {
+    margin-top: 25%;
+  }
+
+  #social-icons li {
+    margin: 1px;
+    margin-left: 2px;
+  }
+
+  #welcome-page {
+    position: absolute;
+    visibility: hidden;
+  }
+
+  #search-bar ul {
+    left: 6%;
+  }
+}
