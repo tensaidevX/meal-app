@@ -4,18 +4,19 @@ window.addEventListener("DOMContentLoaded", () => {
   addListItemtoCard();
 });
 
+// function to add favourite items to DOM
 function addListItemtoCard() {
   const data = localStorage.getItem("favourites");
   const meal = JSON.parse(data);
 
-  if (meal.length == 0) {
+  if (meal.length == 0) { //if there are no favourites 
     emptyListTag = document.createElement("div");
     emptyListTag.id = "fav_null";
     emptyListTag.innerHTML = `<h1>Sir! Your table is ready ! Please add some food </h1><img src ="https://cdn-icons-png.flaticon.com/512/3521/3521843.png" height: 50% width = 50% />`;
     favouritesList.remove();
     mealCardsWrapper.append(emptyListTag);
   }
-
+// else there are favourites
   meal.forEach((element) => {
     const listItem = document.createElement("li");
     listItem.className = "booking-card";
@@ -59,6 +60,7 @@ function addListItemtoCard() {
   });
 }
 
+// function to fetch from  favourites array from local storage 
 function getFavourites() {
   let favourites = [];
   const isPresent = localStorage.getItem("favourites");
@@ -69,6 +71,8 @@ function getFavourites() {
   return favourites;
 }
 
+
+//function to delete data from favourites  array through id 
 function deletefromStorage(id) {
   console.log(id);
   const favourites = getFavourites();
@@ -88,6 +92,7 @@ function deletefromStorage(id) {
   location.reload();
 }
 
+//function to fetch data from id 
 const fetchById = (id) => {
   url = "https://www.themealdb.com/api/json/v1/1/lookup.php?i=" + id;
   fetch(url)
@@ -107,6 +112,7 @@ const fetchById = (id) => {
     });
 };
 
+//function to add meal recipe to local storage for rendering on recipe page 
 function setToLocal(obj) {
   const a = obj.meals;
   localStorage.setItem("mealsDesc", JSON.stringify(a[0]));
