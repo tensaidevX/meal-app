@@ -14,7 +14,7 @@ main {
   margin-left: 50px;
   display: flex;
   flex-direction: row;
-  height: 90vh;
+  height: auto;
   width: 90vw;
 }
 
