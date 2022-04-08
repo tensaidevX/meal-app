@@ -1,6 +1,6 @@
 # meal-app
 
-Meal App project for Coding Ninjas 
+Meal App project for Coding Ninjas  https://shubham-wb.github.io/meal-app/
 
 This project  makes use of **MEALS DB API** https://www.themealdb.com/api.php 
 # index page
